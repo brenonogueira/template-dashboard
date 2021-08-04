@@ -18,6 +18,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from '../../components/ListItem';
+import Footer from '../../components/Footer';
 
 interface AppBarProps extends MuiAppBarProps {
   open?: boolean;
@@ -145,6 +146,7 @@ export default function MainLayout({ children }: any) {
         <Toolbar />
         <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
           {children}
+          <Footer/>
         </Container>
 
       </Box>
